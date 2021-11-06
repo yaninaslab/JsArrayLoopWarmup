@@ -46,3 +46,21 @@ function is_small(num) {
 
 var numbers = [11,3,2,-100,1003,-100000,6000];
 var small_numbers = numbers.filter(is_small);
+
+//Creating arrays for users and subscription status
+var age = [15, 19];
+var is_subscribed = ["true", "false"];
+
+for(i=0; i < age.length; i++) {
+if(age[i] < 18 && is_subscribed[i] !=="true") {
+    console.log("The user is younger than 18 and not subscribed");
+}else if(age[i] >= 18 && is_subscribed[i] !== "true") {
+    console.log("The user is 18 or older and not subscribed")
+}else if(age[i] < 18 && is_subscribed[i] === "true") {
+    console.log("The user is younger than 18 and is subscribed")
+}else if(age[i] >= 18 && is_subscribed[i] === "true") {
+    console.log("The user is 18 or older and is subscribed");
+}else {
+    console.log("Something went wrong!")
+}
+}
