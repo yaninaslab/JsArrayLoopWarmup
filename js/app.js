@@ -58,3 +58,30 @@ var special_num = do_math(2,5);
 console.log(do_math(3,5));
 var smaller = find_smaller(1500, 250);
 
+var dog = {
+    breed: "Pug",
+    weight: 10,
+    chipped: true,
+    given_name: "Spot",
+    parents: ["Chewy", "Sky"],
+    "Fave Toy": "Mr. Potato Head",
+    
+}
+
+console.log(dog.weight);
+console.log(dog["breed"]);
+console.log(dog["Fave Toy"]);
+console.log(dog["parents"][1])
+
+var tweets = [{
+    content: "This is an awesome tweet for tweeter",
+    posted_at: "2021-11-05",
+    username: "awesomeUser",
+},
+{
+    content: "Second Tweet",
+    posted_at: "2021-11-05",
+    username: "bestUser",
+}]
+
+console.log(tweets[1]['content']);
