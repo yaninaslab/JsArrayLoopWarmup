@@ -51,8 +51,10 @@ var small_numbers = numbers.filter(is_small);
 var age = [15, 19];
 var is_subscribed = ["true", "false"];
 
+//Creating a loop that is checking the users' age and their subscription status from the arrays above
 for(i=0; i < age.length; i++) {
 if(age[i] < 18 && is_subscribed[i] !=="true") {
+    //Prints the result for users' age and subscription status
     console.log("The user is younger than 18 and not subscribed");
 }else if(age[i] >= 18 && is_subscribed[i] !== "true") {
     console.log("The user is 18 or older and not subscribed")
